@@ -11,9 +11,11 @@ class Property(models.Model):
         LAND       = 'land',       'Land'
         BEDSITTER  = 'bedsitter',  'Bedsitter'
 
+
     class ListingType(models.TextChoices):
         RENT = 'rent', 'For Rent'
         SALE = 'sale', 'For Sale'
+        BNB = 'bnb', 'BnB / Per Night'
 
     class Status(models.TextChoices):
         PENDING  = 'pending',  'Pending Verification'
